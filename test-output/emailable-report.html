@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">10</td><td class="numi">10</td><td class="numi_attn">7</td><td class="numi_attn">1</td><td class="numi">1,441.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="3">com.qa.freecrm.testcases.ContactsPageTest</td><td><a href="#m1"><b>setUp</b>  </a></td><td class="numi">1</td><td>1526294469660</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m2"><b>setUp</b>  </a></td><td class="numi">1</td><td>1526294469660</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m3"><b>setUp</b>  </a></td><td class="numi">1</td><td>1526294469660</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.qa.freecrm.testcases.ContactsPageTest</td><td><a href="#m4"><b>newContactTest</b>  </a></td><td class="numi">1</td><td>1526294459417</td><td class="numi">9343</td></tr>
+<tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="5">com.qa.freecrm.testcases.ContactsPageTest</td><td><a href="#m5"><b>setUp</b>  </a></td><td class="numi">6</td><td>1526294903858</td><td class="numi">1088</td></tr><tr class="skippedodd"><td><a href="#m6"><b>setUp</b>  </a></td><td class="numi">6</td><td>1526294903858</td><td class="numi">1088</td></tr><tr class="skippedodd"><td><a href="#m7"><b>setUp</b>  </a></td><td class="numi">6</td><td>1526294903858</td><td class="numi">1088</td></tr><tr class="skippedodd"><td><a href="#m8"><b>tearDown</b>  </a></td><td class="numi">7</td><td>1526294903850</td><td class="numi">1100</td></tr><tr class="skippedodd"><td><a href="#m9"><b>tearDown</b>  </a></td><td class="numi">7</td><td>1526294903850</td><td class="numi">1100</td></tr>
+<tr><th colspan="4">Test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="7">com.qa.freecrm.testcases.ContactsPageTest</td><td><a href="#m10"><b>createContactsFromExcel</b>  </a></td><td class="numi">3</td><td>1526294904934</td><td class="numi">16</td></tr><tr class="skippedodd"><td><a href="#m11"><b>createContactsFromExcel</b>  </a></td><td class="numi">3</td><td>1526294904934</td><td class="numi">16</td></tr><tr class="skippedodd"><td><a href="#m12"><b>createContactsFromExcel</b>  </a></td><td class="numi">3</td><td>1526294904934</td><td class="numi">16</td></tr><tr class="skippedodd"><td><a href="#m13"><b>createNewContactdynTest</b>  </a></td><td class="numi">1</td><td>1526294903867</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m14"><b>createNewContacthcTest</b>  </a></td><td class="numi">1</td><td>1526294903862</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m15"><b>selectdynamiclecontactTest</b>  </a></td><td class="numi">1</td><td>1526294903858</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m16"><b>selecthardcodedlecontactTest</b>  </a></td><td class="numi">1</td><td>1526294903846</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">com.qa.freecrm.testcases.HomePageTest</td><td><a href="#m17"><b>ContactsPageTest</b>  </a></td><td class="numi">1</td><td>1526293693338</td><td class="numi">260</td></tr><tr class="passedodd"><td><a href="#m18"><b>HomePageLogoTest</b>  </a></td><td class="numi">1</td><td>1526293593575</td><td class="numi">155</td></tr><tr class="passedodd"><td><a href="#m19"><b>HomePageTitleTest</b>  </a></td><td class="numi">1</td><td>1526293608349</td><td class="numi">101</td></tr>
+<tr class="passedeven"><td rowspan="2">com.qa.freecrm.testcases.LoginPageTest</td><td><a href="#m20"><b>LoginPageLoginTest</b>  </a></td><td class="numi">1</td><td>1526293493148</td><td class="numi">6808</td></tr><tr class="passedeven"><td><a href="#m21"><b>LoginPageTitleTest</b>  </a></td><td class="numi">1</td><td>1526293482278</td><td class="numi">44</td></tr>
+<tr class="passedodd"><td rowspan="3">com.qa.freecrm.testcases.HomePageTest</td><td><a href="#m22"><b>NewContactsTest</b>  </a></td><td class="numi">1</td><td>1526293709540</td><td class="numi">7804</td></tr><tr class="passedodd"><td><a href="#m23"><b>NewTaskTest</b>  </a></td><td class="numi">1</td><td>1526293830756</td><td class="numi">4927</td></tr><tr class="passedodd"><td><a href="#m24"><b>TaskPageclickTest</b>  </a></td><td class="numi">1</td><td>1526293734266</td><td class="numi">2310</td></tr>
+<tr class="passedeven"><td rowspan="1">com.qa.freecrm.testcases.ContactsPageTest</td><td><a href="#m25"><b>contactsTest</b>  </a></td><td class="numi">1</td><td>1526294345772</td><td class="numi">206</td></tr>
+<tr class="passedodd"><td rowspan="1">com.qa.freecrm.testcases.LoginPageTest</td><td><a href="#m26"><b>loginpagelogotest</b>  </a></td><td class="numi">1</td><td>1526293473113</td><td class="numi">116</td></tr>
+</table>
+<h1>Test</h1>
+<h2 id="m1">com.qa.freecrm.testcases.ContactsPageTest:setUp</h2>
+<div style="padding-left:3em">
+<p>chrome not reachable
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;BAN-RAOPW10&apos;, ip: &apos;192.168.0.176&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\raop\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.139, webStorageEnabled: true}
+Session ID: aedc0ad8bf81620db8b856b37b8b6a99
+*** Element info: {Using=css selector, value=frame[name=&apos;mainpanel&apos;],iframe[name=&apos;mainpanel&apos;]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:346)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementsByCssSelector(RemoteWebDriver.java:417)
+<br/>at org.openqa.selenium.By$ByCssSelector.findElements(By.java:441)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:307)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:877)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringTargetLocator.frame(EventFiringWebDriver.java:623)
+<br/>at com.qa.freecrm.utility.TestUtil.switctomainframe(TestUtil.java:30)
+<br/>at com.qa.freecrm.testcases.ContactsPageTest.setUp(ContactsPageTest.java:35)
+<br/>27 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.qa.freecrm.testcases.ContactsPageTest:newContactTest</h2>
+<div style="padding-left:3em">
+<p>null</p>
+org.openqa.selenium.support.events.EventFiringWebDriver.extractInterfaces(EventFiringWebDriver.java:118)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver.access$300(EventFiringWebDriver.java:67)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.&lt;init&gt;(EventFiringWebDriver.java:362)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.&lt;init&gt;(EventFiringWebDriver.java:354)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver.createWebElement(EventFiringWebDriver.java:305)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy12.isEnabled(Unknown Source)
+<br/>at com.qa.freecrm.pages.ContactsPage.validatenewcontact(ContactsPage.java:46)
+<br/>at com.qa.freecrm.testcases.ContactsPageTest.newContactTest(ContactsPageTest.java:49)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.qa.freecrm.testcases.ContactsPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.qa.freecrm.testcases.ContactsPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.qa.freecrm.testcases.ContactsPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.qa.freecrm.testcases.ContactsPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.qa.freecrm.testcases.ContactsPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.qa.freecrm.testcases.ContactsPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.qa.freecrm.testcases.ContactsPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.qa.freecrm.testcases.ContactsPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.qa.freecrm.testcases.ContactsPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.qa.freecrm.testcases.ContactsPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">com.qa.freecrm.testcases.ContactsPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">com.qa.freecrm.testcases.ContactsPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">com.qa.freecrm.testcases.ContactsPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">com.qa.freecrm.testcases.ContactsPageTest:createContactsFromExcel</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr>
+<tr class="param stripe"><td>Mr.</td>
+<td>priyanka</td>
+<td>rao</td>
+<td>gh</td>
+<td>III</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">com.qa.freecrm.testcases.ContactsPageTest:createContactsFromExcel</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr>
+<tr class="param stripe"><td>Ms.</td>
+<td>Preethika</td>
+<td>Khnaaa</td>
+<td>hj</td>
+<td>II</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">com.qa.freecrm.testcases.ContactsPageTest:selecthardcodedlecontactTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">com.qa.freecrm.testcases.ContactsPageTest:createNewContacthcTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">com.qa.freecrm.testcases.ContactsPageTest:createNewContactdynTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">com.qa.freecrm.testcases.ContactsPageTest:selectdynamiclecontactTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">com.qa.freecrm.testcases.ContactsPageTest:createContactsFromExcel</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr>
+<tr class="param stripe"><td>Mr.</td>
+<td>Dhanraj</td>
+<td>Rao</td>
+<td>hhj</td>
+<td>III</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">com.qa.freecrm.testcases.HomePageTest:TaskPageclickTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">com.qa.freecrm.testcases.HomePageTest:NewContactsTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">com.qa.freecrm.testcases.HomePageTest:HomePageLogoTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">com.qa.freecrm.testcases.HomePageTest:HomePageTitleTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">com.qa.freecrm.testcases.LoginPageTest:loginpagelogotest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">com.qa.freecrm.testcases.LoginPageTest:LoginPageLoginTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">com.qa.freecrm.testcases.HomePageTest:NewTaskTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">com.qa.freecrm.testcases.LoginPageTest:LoginPageTitleTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">com.qa.freecrm.testcases.ContactsPageTest:contactsTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m32">com.qa.freecrm.testcases.HomePageTest:ContactsPageTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.qa.ExtentReport.ExtentReportNG"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.qa.freecrm.testcases.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.freecrm.testcases.HomePageTest -->
+      <class name="com.qa.freecrm.testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.freecrm.testcases.LoginPageTest -->
+      <class name="com.qa.freecrm.testcases.ContactsPageTest">
+        <methods>
+          <include name="selectdynamiclecontactTest"/>
+          <include name="createNewContactdynTest"/>
+          <include name="newContactTest"/>
+          <include name="createNewContacthcTest"/>
+          <include name="createContactsFromExcel"/>
+          <include name="tearDown"/>
+          <include name="selecthardcodedlecontactTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.freecrm.testcases.ContactsPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
